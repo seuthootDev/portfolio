@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="min-h-[80vh] gradient-bg grid-pattern relative overflow-hidden flex items-center justify-center">
+    <section className="min-h-[50vh] gradient-bg grid-pattern relative overflow-hidden flex items-center justify-center">
       {/* Decorative nodes and connections to represent workflow */}
       <div className="node bg-green-400 bg-opacity-30" style={{top: '120px', left: '200px'}}></div>
       <div className="node bg-green-400 bg-opacity-30" style={{top: '220px', left: '350px'}}></div>
@@ -38,7 +38,7 @@ const Hero = () => {
         <h2 className="text-2xl text-green-300 font-light mb-12">
           VTK 기반 워크플로우 시각화 플랫폼
         </h2>
-        <div className="flex items-center mt-16">
+        <div className="flex items-center mt-1">
           <div className="w-12 h-12 rounded-full bg-green-500 bg-opacity-20 flex items-center justify-center">
             <i className="fas fa-user text-green-300"></i>
           </div>
@@ -48,14 +48,17 @@ const Hero = () => {
           </div>
         </div>
         
-        {/* Footer with icons representing key technologies */}
-        <div className="absolute bottom-8 left-24 right-24 flex justify-between text-gray-400">
+        
+        
+      </div>
+      {/* Footer with icons representing key technologies */}
+      <div className="absolute bottom-20 left-24 right-24 flex justify-between text-gray-400">
           <div className="flex items-center">
             <i className="fab fa-python mr-2"></i>
             <span>Python 3.10</span>
           </div>
           <div className="flex items-center">
-            <i className="fas fa-desktop mr-2"></i>
+            <i className="fas mr-2">QT</i>
             <span>PySide6</span>
           </div>
           <div className="flex items-center">
@@ -71,7 +74,6 @@ const Hero = () => {
             <span>Chama</span>
           </div>
         </div>
-      </div>
     </section>
   );
 };

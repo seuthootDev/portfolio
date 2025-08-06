@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectOverview = () => {
   return (
-    <section className="min-h-[60vh] bg-white py-16">
+    <section className="min-h-[50vh] bg-white py-16">
       <div className="container mx-auto px-8">
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row min-h-[50vh]">
@@ -32,8 +32,12 @@ const ProjectOverview = () => {
             {/* Image Section */}
             <div className="flex-grow">
               <div className="image-container h-full">
-                <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg flex items-center justify-center">
-                  <i className="fas fa-industry text-6xl text-white opacity-50"></i>
+                <div className="w-full h-full border-2 border-blue-400 rounded-lg overflow-hidden flex items-center justify-center">
+                  <img
+                    src="/images/1.png"
+                    alt="프로젝트 개요 이미지"
+                    className="max-w-full max-h-full object-contain"
+                  />
                 </div>
               </div>
             </div>

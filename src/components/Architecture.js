@@ -3,7 +3,7 @@ import { FaDesktop, FaProjectDiagram, FaThLarge, FaPuzzlePiece, FaCheckCircle } 
 
 const Architecture = () => {
   return (
-    <section className="min-h-[60vh] bg-gray-100 py-16">
+    <section className="min-h-[50vh] bg-gray-100 py-16">
       <div className="container mx-auto px-8">
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row min-h-[50vh]">

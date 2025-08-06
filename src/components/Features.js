@@ -2,7 +2,7 @@ import React from 'react';
 
 const Features = () => {
   return (
-    <section className="min-h-[60vh] bg-white py-16">
+    <section className="min-h-[50vh] bg-white py-16">
       <div className="container mx-auto px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">주요 기능</h2>

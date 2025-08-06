@@ -5,7 +5,6 @@ import ProjectOverview from './components/ProjectOverview';
 import Architecture from './components/Architecture';
 import Features from './components/Features';
 import Implementation from './components/Implementation';
-import Results from './components/Results';
 import Demo from './components/Demo';
 import Conclusion from './components/Conclusion';
 
@@ -98,14 +97,6 @@ function App() {
               >
                 Implementation
               </button>
-              <button 
-                onClick={() => scrollToSection('results')}
-                className={`text-sm font-medium transition-colors ${
-                  activeSection === 'results' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
-                }`}
-              >
-                Results
-              </button>
             </nav>
           </div>
         </div>
@@ -130,9 +121,6 @@ function App() {
         </section>
         <section id="implementation">
           <Implementation />
-        </section>
-        <section id="results">
-          <Results />
         </section>
         <section id="demo">
           <Demo />

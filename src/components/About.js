@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="min-h-[60vh] bg-gray-100 py-16">
+    <section className="min-h-[50vh] bg-gray-100 py-16">
       <div className="container mx-auto px-8">
         <div className="flex flex-col lg:flex-row min-h-[50vh]">
           {/* Left Column - Profile */}
@@ -26,9 +26,7 @@ const About = () => {
               <p className="text-xl text-blue-600 mb-4">소프트웨어 개발자</p>
               <div className="w-20 h-1 bg-orange-500 mb-4"></div>
               <p className="text-center text-gray-700">
-                DAS3D 프로젝트의 주요 개발자로<br/>
-                3D 가스 누출 감지 시스템의<br/>
-                개발 및 유지보수에 참여했습니다.
+                DAS3D 프로젝트의 주요 개발자로 3D 가스 누출 감지 시스템의 개발 및 유지보수에 참여했습니다.
               </p>
             </div>
           </div>
@@ -78,10 +76,10 @@ const About = () => {
               <div className="mt-6">
                 <h3 className="text-2xl font-bold text-blue-700 mb-3">프로젝트 기여</h3>
                 <p className="text-gray-700">
-                DAS3D 프로젝트에서 3D 시각화 기술과<br/>
+                DAS3D 프로젝트에서 3D 시각화 기술과
                 센서 배치 최적화 알고리즘을 중심으로<br/>
-                개발을 진행하였으며, 전체 시스템의<br/>
-                사용자 경험(UX)과 인터페이스(UI)를<br/>
+                개발을 진행하였으며, 전체 시스템의
+                사용자 경험(UX)과 인터페이스(UI)를
                 직접 설계하였습니다.
               </p>
               </div>
