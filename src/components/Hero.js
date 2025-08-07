@@ -73,6 +73,10 @@ const Hero = () => {
             <i className="fas fa-cogs mr-2"></i>
             <span>Chama</span>
           </div>
+          <div className="flex items-center">
+            <i className="fas fa-database mr-2"></i>
+            <span>MongoDB</span>
+          </div>
         </div>
     </section>
   );

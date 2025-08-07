@@ -4,6 +4,7 @@ const About = () => {
   return (
     <section className="min-h-[50vh] bg-gray-100 py-16">
       <div className="container mx-auto px-8">
+      <h2 className="text-3xl font-bold text-gray-800 mb-4">About</h2>
         <div className="flex flex-col lg:flex-row min-h-[50vh]">
           {/* Left Column - Profile */}
           <div className="w-full lg:w-1/3 flex flex-col items-center justify-center lg:pr-8 mb-8 lg:mb-0">
@@ -82,6 +83,46 @@ const About = () => {
                 사용자 경험(UX)과 인터페이스(UI)를
                 직접 설계하였습니다.
               </p>
+              </div>
+              
+              {/* Technical Skills Section */}
+              <div className="mt-8">
+                <h3 className="text-2xl font-bold text-blue-700 mb-4">개발자 보유 기술</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  {/* Frontend */}
+                  <div className="p-4 bg-blue-50 rounded-lg">
+                    <h4 className="text-lg font-semibold text-gray-800 mb-3">프론트엔드</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">TypeScript</span>
+                      <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">React</span>
+                      <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Next.js</span>
+                      <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Tailwind CSS</span>
+                    </div>
+                  </div>
+                  
+                  {/* Backend */}
+                  <div className="p-4 bg-green-50 rounded-lg">
+                    <h4 className="text-lg font-semibold text-gray-800 mb-3">백엔드</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">NestJS</span>
+                      <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">MySQL</span>
+                      <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">MongoDB</span>
+                      <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">FastAPI</span>
+                    </div>
+                  </div>
+                  
+                  {/* Tools & Others */}
+                  <div className="p-4 bg-purple-50 rounded-lg">
+                    <h4 className="text-lg font-semibold text-gray-800 mb-3">도구 및 기타</h4>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Git</span>
+                      <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Docker</span>
+                      <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">AWS</span>
+                      <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">PyQt</span>
+                      <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">VTK</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

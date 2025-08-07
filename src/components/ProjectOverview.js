@@ -4,6 +4,7 @@ const ProjectOverview = () => {
   return (
     <section className="min-h-[50vh] bg-white py-16">
       <div className="container mx-auto px-8">
+      <h2 className="text-3xl font-bold text-gray-800 mb-4">Project Overview</h2>
         {/* Main Content */}
         <div className="flex flex-col lg:flex-row min-h-[50vh]">
           {/* Left Column - Purpose and Image */}
@@ -46,7 +47,7 @@ const ProjectOverview = () => {
           {/* Right Column - Core Functions */}
           <div className="w-full lg:w-1/2 lg:pl-6">
             <h2 className="text-xl font-bold text-blue-700 mb-4">핵심 기능</h2>
-            <div className="space-y-3">
+            <div className="space-y-3 mb-8">
               {/* Function 1 */}
               <div className="feature-card feature-card-blue bg-white p-4 rounded-lg shadow-md flex">
                 <div className="icon-circle bg-blue-100 mr-4 flex-shrink-0">
@@ -105,6 +106,50 @@ const ProjectOverview = () => {
                     과정을 손쉽게 구성하고, 위젯 간의 실시간 
                     데이터 동기화로 결과를 즉시 확인할 수 있습니다.
                   </p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Technical Stack Section */}
+            <h3 className="text-xl font-bold text-blue-700 mb-4">사용 기술</h3>
+            <div className="grid grid-cols-2 gap-3">
+              <div className="flex items-center p-3 bg-blue-50 rounded-lg">
+                <div className="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
+                  <i className="fas fa-cubes text-white text-sm"></i>
+                </div>
+                <div>
+                <h4 className="font-bold text-gray-800 text-sm">VTK</h4>
+                <p className="text-xs text-gray-600">3D 과학 시각화 툴킷</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center p-3 bg-green-50 rounded-lg">
+                <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center mr-3">
+                  <i className="fas fa-wind text-white text-sm"></i>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800 text-sm">OpenFOAM</h4>
+                  <p className="text-xs text-gray-600">CFD 시뮬레이션 프레임워크</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center p-3 bg-orange-50 rounded-lg">
+                <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center mr-3">
+                  <i className="fas fa-cogs text-white text-sm"></i>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800 text-sm">Chama</h4>
+                  <p className="text-xs text-gray-600">센서 최적화 라이브러리</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center p-3 bg-purple-50 rounded-lg">
+                <div className="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center mr-3">
+                  <i className="fab fa-python text-white text-sm"></i>
+                </div>
+                <div>
+                  <h4 className="font-bold text-gray-800 text-sm">Python 3.10</h4>
+                  <p className="text-xs text-gray-600">메인 개발 언어</p>
                 </div>
               </div>
             </div>

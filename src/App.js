@@ -4,7 +4,6 @@ import About from './components/About';
 import ProjectOverview from './components/ProjectOverview';
 import Architecture from './components/Architecture';
 import Features from './components/Features';
-import Implementation from './components/Implementation';
 import Demo from './components/Demo';
 import Conclusion from './components/Conclusion';
 
@@ -90,12 +89,12 @@ function App() {
                 Features
               </button>
               <button 
-                onClick={() => scrollToSection('implementation')}
+                onClick={() => scrollToSection('demo')}
                 className={`text-sm font-medium transition-colors ${
-                  activeSection === 'implementation' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
+                  activeSection === 'demo' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
                 }`}
               >
-                Implementation
+                Demo
               </button>
             </nav>
           </div>
@@ -119,9 +118,6 @@ function App() {
         <section id="features">
           <Features />
         </section>
-        <section id="implementation">
-          <Implementation />
-        </section>
         <section id="demo">
           <Demo />
         </section>
@@ -134,7 +130,7 @@ function App() {
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-6 text-center">
           <p className="text-sm text-gray-400">
-            © 2024 DAS3D Project. All rights reserved.
+            © 2025 Jung Seunghoon. All rights reserved.
           </p>
         </div>
       </footer>
