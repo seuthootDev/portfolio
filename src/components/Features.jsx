@@ -125,16 +125,16 @@ const features = [
     description: '시뮬레이션 결과와 센서 데이터를 통합하여 실시간 모니터링 대시보드를 제공합니다.',
     icon: 'fas fa-tachometer-alt',
     color: 'indigo',
-    image: '/images/1.png',
-    subimage1: '/images/1.png',
-    subimage2: '/images/1.png'
+    image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754555365/5-3.png',
+    subimage1: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754555364/5-1.png',
+    subimage2: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754555366/5-2.png'
   },
   {
     title: '도면 편집',
     description: '3D 모델의 특정 영역을 클리핑하여 내부 구조를 자세히 분석할 수 있습니다.',
     icon: 'fas fa-pencil-ruler',
     color: 'pink',
-    image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754554853/3-1.png',
+    image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754555353/4-1.png',
     subimage1: '/images/1.png',
     subimage2: '/images/1.png'
   },
