@@ -43,9 +43,9 @@ const ProjectOverview = () => {
             {/* Image Section */}
             <div className="flex-grow">
               <div className="image-container h-full">
-                <div className="w-full h-full border-2 border-blue-400 rounded-lg overflow-hidden flex items-center justify-center">
+                <div className="w-full h-full border-2 bg-gray-200 border-blue-400 rounded-lg overflow-hidden flex items-center justify-center">
                   <img
-                    src="/images/1.png"
+                    src="https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754533823/1123.png"
                     alt="프로젝트 개요 이미지"
                     className="max-w-full max-h-full object-contain"
                     onError={handleImageError}

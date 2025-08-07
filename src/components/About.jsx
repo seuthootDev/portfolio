@@ -27,7 +27,7 @@ const About = () => {
               <p className="text-xl text-blue-600 mb-4">소프트웨어 개발자</p>
               <div className="w-20 h-1 bg-orange-500 mb-4"></div>
               <p className="text-center text-gray-700">
-                DAS3D 프로젝트의 주요 개발자로 3D 가스 누출 감지 시스템의 개발 및 유지보수에 참여했습니다.
+                DAS3D 프로젝트의 개발자로 시스템 개발 및 유지보수에 참여했습니다.
               </p>
             </div>
           </div>

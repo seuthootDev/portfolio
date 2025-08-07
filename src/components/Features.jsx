@@ -67,74 +67,74 @@ const getColorClasses = (color, type) => {
 // 기능 데이터는 변동이 없으므로 컴포넌트 외부로 분리
 const features = [
   {
+    title: '워크플로우',
+    description: '노드 기반 워크플로우로 복잡한 분석 과정을 시각적으로 구성할 수 있습니다.',
+    icon: 'fas fa-project-diagram',
+    color: 'blue',
+    image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754553881/1-3.png',
+    subimage1: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754553799/1.png',
+    subimage2: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754553815/1-1.png'
+  },
+  {
     title: '3D 모델 시각화',
     description: 'VTK를 활용한 고성능 3D 렌더링으로 산업 시설의 복잡한 구조를 직관적으로 표현합니다.',
     icon: 'fas fa-cube',
-    color: 'blue',
-    image: '/images/1.png',
-    subimage1: '/images/1.png',
-    subimage2: '/images/1.png'
-  },
-  {
-    title: 'CFD 시뮬레이션',
-    description: 'OpenFOAM 기반의 전산유체역학 시뮬레이션으로 가스 확산 패턴을 정확하게 예측합니다.',
-    icon: 'fas fa-wind',
     color: 'green',
-    image: '/images/1.png',
-    subimage1: '/images/1.png',
-    subimage2: '/images/1.png'
+    image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754554450/2-2.png',
+    subimage1: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754554449/2-1.png',
+    subimage2: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754554451/2-3.png'
   },
   {
     title: '센서 최적화',
     description: 'Chama 라이브러리를 활용한 센서 배치 최적화로 탐지 효율을 극대화합니다.',
     icon: 'fas fa-search-location',
     color: 'orange',
-    image: '/images/1.png',
+    image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754554853/3-1.png',
     subimage1: '/images/1.png',
     subimage2: '/images/1.png'
   },
   {
-    title: '워크플로우',
-    description: '노드 기반 워크플로우로 복잡한 분석 과정을 시각적으로 구성할 수 있습니다.',
-    icon: 'fas fa-project-diagram',
+    title: '가스 클라우드 시각화',
+    description: '3D 가스 확산 시뮬레이션 결과를 직관적인 클라우드 형태로 시각화합니다.',
+    icon: 'fas fa-cloud',
     color: 'purple',
     image: '/images/1.png',
     subimage1: '/images/1.png',
     subimage2: '/images/1.png'
   },
   {
-    title: '실시간 모니터링',
-    description: '실시간 데이터 연동으로 시뮬레이션 결과를 즉시 확인하고 분석할 수 있습니다.',
-    icon: 'fas fa-chart-line',
+    title: '컨투어 시각화',
+    description: '가스 농도 분포를 컨투어 맵으로 표현하여 위험 구역을 명확하게 표시합니다.',
+    icon: 'fas fa-chart-area',
     color: 'red',
     image: '/images/1.png',
     subimage1: '/images/1.png',
     subimage2: '/images/1.png'
   },
   {
-    title: '사용자 친화적 UI',
-    description: 'PySide6 기반의 직관적인 사용자 인터페이스로 전문가가 아닌 사용자도 쉽게 활용할 수 있습니다.',
-    icon: 'fas fa-users',
+    title: '클립퍼',
+    description: '3D 모델의 특정 영역을 클리핑하여 내부 구조를 자세히 분석할 수 있습니다.',
+    icon: 'fas fa-cut',
     color: 'teal',
     image: '/images/1.png',
     subimage1: '/images/1.png',
     subimage2: '/images/1.png'
   },
   {
-    title: '데이터 처리',
-    description: 'STL 파일 로딩, 후보 감지기 생성, 누출 시나리오 등 다양한 데이터 처리 기능을 제공합니다.',
-    icon: 'fas fa-database',
+    title: '대시보드',
+    description: '시뮬레이션 결과와 센서 데이터를 통합하여 실시간 모니터링 대시보드를 제공합니다.',
+    icon: 'fas fa-tachometer-alt',
     color: 'indigo',
     image: '/images/1.png',
     subimage1: '/images/1.png',
     subimage2: '/images/1.png'
   },
   {
-    title: '자동화 시스템',
-    description: '위젯 간 자동 연결 시스템으로 복잡한 워크플로우를 자동으로 구성할 수 있습니다.',
-    icon: 'fas fa-cogs',
+    title: '도면 편집',
+    description: '3D 모델의 특정 영역을 클리핑하여 내부 구조를 자세히 분석할 수 있습니다.',
+    icon: 'fas fa-pencil-ruler',
     color: 'pink',
-    image: '/images/1.png',
+    image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754554853/3-1.png',
     subimage1: '/images/1.png',
     subimage2: '/images/1.png'
   },
@@ -185,7 +185,7 @@ const Features = () => {
                  <img 
                    src={feature.image} 
                    alt={feature.title} 
-                   className="w-full h-full object-cover" 
+                   className="w-full h-full object-contain" 
                    onError={handleImageError}
                  />
                  <div className="absolute inset-0 bg-black bg-opacity-15 flex items-center justify-center">
@@ -223,30 +223,33 @@ const Features = () => {
               {/* 이미지와 설명을 나란히 배치 */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                 <div className="space-y-4">
-                  <div className={`w-full h-80 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} overflow-hidden`}>
+                  <div className={`w-full h-80 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} overflow-hidden cursor-pointer`}>
                     <img 
                       src={selectedFeature.image} 
                       alt={selectedFeature.title} 
-                      className="w-full h-full object-cover" 
+                      className="w-full h-full object-contain" 
                       onError={handleImageError}
+                      onClick={() => window.open(selectedFeature.image, '_blank')}
                     />
                   </div>
                   {/* 추가 이미지 공간 */}
                   <div className="grid grid-cols-2 gap-4">
-                    <div className={`h-40 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')}`}>
+                    <div className={`h-40 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} cursor-pointer`}>
                       <img 
                         src={selectedFeature.subimage1} 
                         alt={selectedFeature.title} 
-                        className="w-full h-full object-cover" 
+                        className="w-full h-full object-contain" 
                         onError={handleImageError}
+                        onClick={() => window.open(selectedFeature.subimage1, '_blank')}
                       />
                     </div>
-                    <div className={`h-40 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')}`}>
+                    <div className={`h-40 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} cursor-pointer`}>
                       <img 
                         src={selectedFeature.subimage2} 
                         alt={selectedFeature.title} 
-                        className="w-full h-full object-cover" 
+                        className="w-full h-full object-contain" 
                         onError={handleImageError}
+                        onClick={() => window.open(selectedFeature.subimage2, '_blank')}
                       />
                     </div>
                   </div>
@@ -261,14 +264,14 @@ const Features = () => {
                   <div className="border-t pt-6">
                     <h4 className="text-xl font-semibold mb-3 text-gray-800">기술 스택</h4>
                     <p className="text-gray-600 leading-relaxed">
-                      {selectedFeature.title === '3D 모델 시각화' && 'VTK 라이브러리를 사용해 복잡한 3D 데이터를 효율적으로 렌더링하고 사용자 인터페이스와 상호작용합니다.'}
-                      {selectedFeature.title === 'CFD 시뮬레이션' && 'OpenFOAM 기반의 병렬 처리를 통해 대규모 시뮬레이션을 빠르게 수행하며, 결과 데이터를 시각화합니다.'}
-                      {selectedFeature.title === '센서 최적화' && 'Chama 라이브러리 외에 다양한 최적화 알고리즘을 적용하여 최적의 센서 위치를 자동으로 찾아냅니다.'}
-                      {selectedFeature.title === '워크플로우' && '노드 기반의 그래픽 인터페이스를 통해 사용자가 분석 파이프라인을 드래그 앤 드롭으로 손쉽게 구성할 수 있습니다.'}
-                      {selectedFeature.title === '실시간 모니터링' && 'MQTT 등 실시간 통신 프로토콜을 활용하여 현장 데이터를 수신하고 시뮬레이션 결과와 비교 분석합니다.'}
-                      {selectedFeature.title === '사용자 친화적 UI' && 'PySide6의 Qt Designer를 사용해 디자인된 인터페이스는 직관적이며, 사용자 맞춤형 대시보드 기능을 제공합니다.'}
-                      {selectedFeature.title === '데이터 처리' && '다양한 포맷의 3D 모델(STL, OBJ)과 센서 데이터를 처리하며, 데이터 전처리 및 후처리 모듈을 포함합니다.'}
-                      {selectedFeature.title === '자동화 시스템' && '위젯 간의 데이터 흐름을 자동으로 감지하고 연결하여, 반복적인 작업 과정을 최소화합니다.'}
+                      {selectedFeature.title === '워크플로우' && '노드 기반 워크플로우로 복잡한 분석 과정을 시각적으로 구성할 수 있습니다.'}
+                      {selectedFeature.title === '3D 모델 시각화' && 'VTK를 활용한 고성능 3D 렌더링으로 산업 시설의 복잡한 구조를 직관적으로 표현합니다.'}
+                      {selectedFeature.title === '센서 최적화' && 'Chama 라이브러리를 활용한 센서 배치 최적화로 탐지 효율을 극대화합니다.'}
+                      {selectedFeature.title === '가스 클라우드 시각화' && '3D 가스 확산 시뮬레이션 결과를 직관적인 클라우드 형태로 시각화합니다.'}
+                      {selectedFeature.title === '컨투어 시각화' && '가스 농도 분포를 컨투어 맵으로 표현하여 위험 구역을 명확하게 표시합니다.'}
+                      {selectedFeature.title === '클립퍼' && '3D 모델의 특정 영역을 클리핑하여 내부 구조를 자세히 분석할 수 있습니다.'}
+                      {selectedFeature.title === '결과 대시보드' && '시뮬레이션 결과와 센서 데이터를 통합하여 실시간 모니터링 대시보드를 제공합니다.'}
+                      {selectedFeature.title === '웹 버전' && '데스크톱 애플리케이션을 웹 기반으로 확장하여 원격 접근이 가능합니다.'}
                     </p>
                   </div>
                 </div>

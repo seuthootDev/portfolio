@@ -34,10 +34,10 @@ const Hero = () => {
             <span className="inline-block bg-green-500 bg-opacity-30 text-green-100 px-4 py-1 rounded-full text-sm font-medium tracking-wider">2023.08 ~ 2025.12</span>
           </div>
           <h1 className="text-5xl font-bold text-white mb-4 tracking-tight">
-            DAS3D <span className="text-green-400">-</span> 3D 가스 누출 감지 시스템
+            DAS3D <span className="text-green-400">-</span> 3D 누출 시뮬레이션 및 센서배치 최적화 프로그램
           </h1>
           <h2 className="text-2xl text-green-300 font-light mb-12">
-            VTK 기반 워크플로우 시각화 플랫폼
+            PySide6 + VTK 기반 워크플로우 방식의 QUI
           </h2>
           <div className="flex items-center mt-1">
             <div className="w-12 h-12 rounded-full bg-green-500 bg-opacity-20 flex items-center justify-center">
