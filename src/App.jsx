@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Hero from './components/Hero';
-import About from './components/About';
-import ProjectOverview from './components/ProjectOverview';
-import Architecture from './components/Architecture';
-import Features from './components/Features';
-import Demo from './components/Demo';
-import Conclusion from './components/Conclusion';
+import Hero from './components/Hero.jsx';
+import About from './components/About.jsx';
+import ProjectOverview from './components/ProjectOverview.jsx';
+import Architecture from './components/Architecture.jsx';
+import Features from './components/Features.jsx';
+import Demo from './components/Demo.jsx';
+import Conclusion from './components/Conclusion.jsx';
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
