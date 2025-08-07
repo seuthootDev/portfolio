@@ -71,72 +71,72 @@ const features = [
     description: 'VTK를 활용한 고성능 3D 렌더링으로 산업 시설의 복잡한 구조를 직관적으로 표현합니다.',
     icon: 'fas fa-cube',
     color: 'blue',
-    image: 'images/1.png',
-    subimage1: 'images/1-1.png',
-    subimage2: 'images/1-2.png' // 예시 이미지 URL
+    image: '/images/1.png',
+    subimage1: '/images/1.png',
+    subimage2: '/images/1.png'
   },
   {
     title: 'CFD 시뮬레이션',
     description: 'OpenFOAM 기반의 전산유체역학 시뮬레이션으로 가스 확산 패턴을 정확하게 예측합니다.',
     icon: 'fas fa-wind',
     color: 'green',
-    image: 'images/2.png',
-    subimage1: 'images/2-1.png',
-    subimage2: 'images/2-2.png' // 예시 이미지 URL
+    image: '/images/1.png',
+    subimage1: '/images/1.png',
+    subimage2: '/images/1.png'
   },
   {
     title: '센서 최적화',
     description: 'Chama 라이브러리를 활용한 센서 배치 최적화로 탐지 효율을 극대화합니다.',
     icon: 'fas fa-search-location',
     color: 'orange',
-    image: 'images/3.png',
-    subimage1: 'images/3-1.png',
-    subimage2: 'images/3-2.png' // 예시 이미지 URL
+    image: '/images/1.png',
+    subimage1: '/images/1.png',
+    subimage2: '/images/1.png'
   },
   {
     title: '워크플로우',
     description: '노드 기반 워크플로우로 복잡한 분석 과정을 시각적으로 구성할 수 있습니다.',
     icon: 'fas fa-project-diagram',
     color: 'purple',
-    image: 'images/4.png',
-    subimage1: 'images/4-1.png',
-    subimage2: 'images/4-2.png' // 예시 이미지 URL
+    image: '/images/1.png',
+    subimage1: '/images/1.png',
+    subimage2: '/images/1.png'
   },
   {
     title: '실시간 모니터링',
     description: '실시간 데이터 연동으로 시뮬레이션 결과를 즉시 확인하고 분석할 수 있습니다.',
     icon: 'fas fa-chart-line',
     color: 'red',
-    image: 'images/5.png',
-    subimage1: 'images/5-1.png',
-    subimage2: 'images/5-2.png' // 예시 이미지 URL
+    image: '/images/1.png',
+    subimage1: '/images/1.png',
+    subimage2: '/images/1.png'
   },
   {
     title: '사용자 친화적 UI',
     description: 'PySide6 기반의 직관적인 사용자 인터페이스로 전문가가 아닌 사용자도 쉽게 활용할 수 있습니다.',
     icon: 'fas fa-users',
     color: 'teal',
-    image: 'images/6.png',
-    subimage1: 'images/6-1.png',
-    subimage2: 'images/6-2.png' // 예시 이미지 URL
+    image: '/images/1.png',
+    subimage1: '/images/1.png',
+    subimage2: '/images/1.png'
   },
   {
     title: '데이터 처리',
     description: 'STL 파일 로딩, 후보 감지기 생성, 누출 시나리오 등 다양한 데이터 처리 기능을 제공합니다.',
     icon: 'fas fa-database',
     color: 'indigo',
-    image: 'images/7.png',
-    subimage1: 'images/7-1.png',
-    subimage2: 'images/7-2.png' // 예시 이미지 URL
+    image: '/images/1.png',
+    subimage1: '/images/1.png',
+    subimage2: '/images/1.png'
   },
   {
     title: '자동화 시스템',
     description: '위젯 간 자동 연결 시스템으로 복잡한 워크플로우를 자동으로 구성할 수 있습니다.',
     icon: 'fas fa-cogs',
     color: 'pink',
-    image: 'images/8.png',
-    subimage1: 'images/8-1.png',
-    subimage2: 'images/8-2.png' // 예시 이미지 URL
+    image: '/images/1.png',
+    subimage1: '/images/1.png',
+    subimage2: '/images/1.png'
   },
 ];
 
