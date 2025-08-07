@@ -154,6 +154,12 @@ const Features = () => {
     setSelectedFeature(null);
   };
 
+  // 이미지 로딩 에러 처리
+  const handleImageError = (e) => {
+    e.target.style.display = 'none';
+    e.target.nextSibling.style.display = 'flex';
+  };
+
   return (
     <section className="bg-white py-16">
       <div className="container mx-auto px-8">
@@ -176,7 +182,12 @@ const Features = () => {
             >
                              {/* 이미지 썸네일 */}
                <div className={`mb-4 rounded-lg overflow-hidden border-2 h-32 bg-gray-50 relative ${getColorClasses(feature.color, 'border')}`}>
-                 <img src={feature.image} alt={feature.title} className="w-full h-full object-cover" />
+                 <img 
+                   src={feature.image} 
+                   alt={feature.title} 
+                   className="w-full h-full object-cover" 
+                   onError={handleImageError}
+                 />
                  <div className="absolute inset-0 bg-black bg-opacity-15 flex items-center justify-center">
                    <div className="text-white text-sm font-medium">클릭해서 확대</div>
                  </div>
@@ -213,15 +224,30 @@ const Features = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                 <div className="space-y-4">
                   <div className={`w-full h-80 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} overflow-hidden`}>
-                    <img src={selectedFeature.image} alt={selectedFeature.title} className="w-full h-full object-cover" />
+                    <img 
+                      src={selectedFeature.image} 
+                      alt={selectedFeature.title} 
+                      className="w-full h-full object-cover" 
+                      onError={handleImageError}
+                    />
                   </div>
                   {/* 추가 이미지 공간 */}
                   <div className="grid grid-cols-2 gap-4">
                     <div className={`h-40 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')}`}>
-                      <img src={selectedFeature.subimage1} alt={selectedFeature.title} className="w-full h-full object-cover" />
+                      <img 
+                        src={selectedFeature.subimage1} 
+                        alt={selectedFeature.title} 
+                        className="w-full h-full object-cover" 
+                        onError={handleImageError}
+                      />
                     </div>
                     <div className={`h-40 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')}`}>
-                      <img src={selectedFeature.subimage2} alt={selectedFeature.title} className="w-full h-full object-cover" />
+                      <img 
+                        src={selectedFeature.subimage2} 
+                        alt={selectedFeature.title} 
+                        className="w-full h-full object-cover" 
+                        onError={handleImageError}
+                      />
                     </div>
                   </div>
                 </div>

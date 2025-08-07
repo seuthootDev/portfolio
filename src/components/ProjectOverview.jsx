@@ -1,6 +1,16 @@
 import React from 'react';
 
 const ProjectOverview = () => {
+  // 이미지 로딩 에러 처리
+  const handleImageError = (e) => {
+    e.target.style.display = 'none';
+    // 에러 시 placeholder 표시
+    const placeholder = document.createElement('div');
+    placeholder.className = 'w-full h-full bg-gray-200 flex items-center justify-center text-gray-500';
+    placeholder.innerHTML = '<div class="text-center"><i class="fas fa-image text-4xl mb-2"></i><p>이미지를 불러올 수 없습니다</p></div>';
+    e.target.parentNode.appendChild(placeholder);
+  };
+
   return (
     <section className="min-h-[50vh] bg-white py-16">
       <div className="container mx-auto px-8">
@@ -38,6 +48,7 @@ const ProjectOverview = () => {
                     src="/images/1.png"
                     alt="프로젝트 개요 이미지"
                     className="max-w-full max-h-full object-contain"
+                    onError={handleImageError}
                   />
                 </div>
               </div>

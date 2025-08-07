@@ -28,56 +28,60 @@ const Hero = () => {
       </div>
       
       {/* Main content */}
-      <div className="relative w-full h-full flex flex-col justify-center px-24 z-10">
-        <div className="mb-4">
-          <span className="inline-block bg-green-500 bg-opacity-30 text-green-100 px-4 py-1 rounded-full text-sm font-medium tracking-wider">2023.08 ~ 2025.12</span>
-        </div>
-        <h1 className="text-5xl font-bold text-white mb-4 tracking-tight">
-          DAS3D <span className="text-green-400">-</span> 3D 가스 누출 감지 시스템
-        </h1>
-        <h2 className="text-2xl text-green-300 font-light mb-12">
-          VTK 기반 워크플로우 시각화 플랫폼
-        </h2>
-        <div className="flex items-center mt-1">
-          <div className="w-12 h-12 rounded-full bg-green-500 bg-opacity-20 flex items-center justify-center">
-            <i className="fas fa-user text-green-300"></i>
+      <div className="container mx-auto px-8 relative z-10">
+        <div className="flex flex-col justify-center min-h-[50vh]">
+          <div className="mb-4">
+            <span className="inline-block bg-green-500 bg-opacity-30 text-green-100 px-4 py-1 rounded-full text-sm font-medium tracking-wider">2023.08 ~ 2025.12</span>
           </div>
-          <div className="ml-4">
-            <p className="text-white text-lg">정승훈</p>
-            <p className="text-gray-400 text-sm">소프트웨어 개발자</p>
+          <h1 className="text-5xl font-bold text-white mb-4 tracking-tight">
+            DAS3D <span className="text-green-400">-</span> 3D 가스 누출 감지 시스템
+          </h1>
+          <h2 className="text-2xl text-green-300 font-light mb-12">
+            VTK 기반 워크플로우 시각화 플랫폼
+          </h2>
+          <div className="flex items-center mt-1">
+            <div className="w-12 h-12 rounded-full bg-green-500 bg-opacity-20 flex items-center justify-center">
+              <i className="fas fa-user text-green-300"></i>
+            </div>
+            <div className="ml-4">
+              <p className="text-white text-lg">정승훈</p>
+              <p className="text-gray-400 text-sm">소프트웨어 개발자</p>
+            </div>
           </div>
         </div>
-        
-        
-        
       </div>
+      
       {/* Footer with icons representing key technologies */}
-      <div className="absolute bottom-20 left-24 right-24 flex justify-between text-gray-400">
-          <div className="flex items-center">
-            <i className="fab fa-python mr-2"></i>
-            <span>Python 3.10</span>
-          </div>
-          <div className="flex items-center">
-            <i className="fas mr-2">QT</i>
-            <span>PySide6</span>
-          </div>
-          <div className="flex items-center">
-            <i className="fas fa-cubes mr-2"></i>
-            <span>VTK</span>
-          </div>
-          <div className="flex items-center">
-            <i className="fas fa-chart-line mr-2"></i>
-            <span>NumPy + Pandas</span>
-          </div>
-          <div className="flex items-center">
-            <i className="fas fa-cogs mr-2"></i>
-            <span>Chama</span>
-          </div>
-          <div className="flex items-center">
-            <i className="fas fa-database mr-2"></i>
-            <span>MongoDB</span>
+      <div className="absolute bottom-20 left-0 right-0">
+        <div className="container mx-auto px-8">
+          <div className="flex justify-between text-gray-400">
+            <div className="flex items-center">
+              <i className="fab fa-python mr-2"></i>
+              <span>Python 3.10</span>
+            </div>
+            <div className="flex items-center">
+              <i className="fas mr-2">QT</i>
+              <span>PySide6</span>
+            </div>
+            <div className="flex items-center">
+              <i className="fas fa-cubes mr-2"></i>
+              <span>VTK</span>
+            </div>
+            <div className="flex items-center">
+              <i className="fas fa-chart-line mr-2"></i>
+              <span>NumPy + Pandas</span>
+            </div>
+            <div className="flex items-center">
+              <i className="fas fa-cogs mr-2"></i>
+              <span>Chama</span>
+            </div>
+            <div className="flex items-center">
+              <i className="fas fa-database mr-2"></i>
+              <span>MongoDB</span>
+            </div>
           </div>
         </div>
+      </div>
     </section>
   );
 };
