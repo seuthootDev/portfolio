@@ -1,5 +1,69 @@
 import React, { useState } from 'react';
 
+// 색상 클래스를 명시적으로 정의하는 헬퍼 함수
+const getColorClasses = (color, type) => {
+  const colorMap = {
+    blue: {
+      bg: 'bg-blue-50',
+      bgTo: 'bg-gradient-to-br from-blue-50 to-blue-100',
+      border: 'border-blue-200',
+      icon: 'bg-blue-500',
+      text: 'text-blue-600'
+    },
+    green: {
+      bg: 'bg-green-50',
+      bgTo: 'bg-gradient-to-br from-green-50 to-green-100',
+      border: 'border-green-200',
+      icon: 'bg-green-500',
+      text: 'text-green-600'
+    },
+    orange: {
+      bg: 'bg-orange-50',
+      bgTo: 'bg-gradient-to-br from-orange-50 to-orange-100',
+      border: 'border-orange-200',
+      icon: 'bg-orange-500',
+      text: 'text-orange-600'
+    },
+    purple: {
+      bg: 'bg-purple-50',
+      bgTo: 'bg-gradient-to-br from-purple-50 to-purple-100',
+      border: 'border-purple-200',
+      icon: 'bg-purple-500',
+      text: 'text-purple-600'
+    },
+    red: {
+      bg: 'bg-red-50',
+      bgTo: 'bg-gradient-to-br from-red-50 to-red-100',
+      border: 'border-red-200',
+      icon: 'bg-red-500',
+      text: 'text-red-600'
+    },
+    teal: {
+      bg: 'bg-teal-50',
+      bgTo: 'bg-gradient-to-br from-teal-50 to-teal-100',
+      border: 'border-teal-200',
+      icon: 'bg-teal-500',
+      text: 'text-teal-600'
+    },
+    indigo: {
+      bg: 'bg-indigo-50',
+      bgTo: 'bg-gradient-to-br from-indigo-50 to-indigo-100',
+      border: 'border-indigo-200',
+      icon: 'bg-indigo-500',
+      text: 'text-indigo-600'
+    },
+    pink: {
+      bg: 'bg-pink-50',
+      bgTo: 'bg-gradient-to-br from-pink-50 to-pink-100',
+      border: 'border-pink-200',
+      icon: 'bg-pink-500',
+      text: 'text-pink-600'
+    }
+  };
+  
+  return colorMap[color]?.[type] || '';
+};
+
 // 기능 데이터는 변동이 없으므로 컴포넌트 외부로 분리
 const features = [
   {
@@ -107,11 +171,11 @@ const Features = () => {
             <div
               key={index}
               className={`flex flex-col p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer
-                         bg-gradient-to-br from-${feature.color}-50 to-${feature.color}-100`}
+                         ${getColorClasses(feature.color, 'bgTo')}`}
               onClick={() => openPopup(feature)}
             >
                              {/* 이미지 썸네일 */}
-               <div className={`mb-4 rounded-lg overflow-hidden border-2 h-32 bg-gray-50 relative border-${feature.color}-200`}>
+               <div className={`mb-4 rounded-lg overflow-hidden border-2 h-32 bg-gray-50 relative ${getColorClasses(feature.color, 'border')}`}>
                  <img src={feature.image} alt={feature.title} className="w-full h-full object-cover" />
                  <div className="absolute inset-0 bg-black bg-opacity-15 flex items-center justify-center">
                    <div className="text-white text-sm font-medium">클릭해서 확대</div>
@@ -119,7 +183,7 @@ const Features = () => {
                </div>
               
               <div className="flex items-center mb-2">
-                <div className={`w-10 h-10 bg-${feature.color}-500 rounded-full flex items-center justify-center mr-3`}>
+                <div className={`w-10 h-10 ${getColorClasses(feature.color, 'icon')} rounded-full flex items-center justify-center mr-3`}>
                   <i className={`${feature.icon} text-white text-lg`}></i>
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">{feature.title}</h3>
@@ -148,15 +212,15 @@ const Features = () => {
               {/* 이미지와 설명을 나란히 배치 */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                 <div className="space-y-4">
-                  <div className={`w-full h-80 bg-gray-50 border-2 rounded-lg flex items-center justify-center border-${selectedFeature.color}-200 overflow-hidden`}>
+                  <div className={`w-full h-80 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} overflow-hidden`}>
                     <img src={selectedFeature.image} alt={selectedFeature.title} className="w-full h-full object-cover" />
                   </div>
                   {/* 추가 이미지 공간 */}
                   <div className="grid grid-cols-2 gap-4">
-                    <div className={`h-40 bg-gray-50 border-2 rounded-lg flex items-center justify-center border-${selectedFeature.color}-200`}>
+                    <div className={`h-40 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')}`}>
                       <img src={selectedFeature.subimage1} alt={selectedFeature.title} className="w-full h-full object-cover" />
                     </div>
-                    <div className={`h-40 bg-gray-50 border-2 rounded-lg flex items-center justify-center border-${selectedFeature.color}-200`}>
+                    <div className={`h-40 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')}`}>
                       <img src={selectedFeature.subimage2} alt={selectedFeature.title} className="w-full h-full object-cover" />
                     </div>
                   </div>
