@@ -7,7 +7,7 @@ const About = () => {
       <h2 className="text-3xl font-bold text-gray-800 mb-4">About</h2>
         <div className="flex flex-col lg:flex-row min-h-[50vh]">
           {/* Left Column - Profile */}
-          <div className="w-full lg:w-1/3 flex flex-col items-center justify-center lg:pr-8 mb-8 lg:mb-0">
+          <div className="w-full lg:w-1/3 flex flex-col items-center justify-center lg:pr-8 lg:mb-0">
             <div className="content-box w-full p-8 flex flex-col items-center">
               <div className="w-41 h-41 rounded-full bg-blue-100 flex items-center justify-center mb-6 border-4 border-blue-500 overflow-hidden">
                 <img
@@ -25,7 +25,7 @@ const About = () => {
               </div>
               <h2 className="text-3xl font-bold text-blue-700 mb-2">정승훈</h2>
               <p className="text-xl text-blue-600 mb-4">소프트웨어 개발자</p>
-              <div className="w-20 h-1 bg-orange-500 mb-4"></div>
+              <div className="w-20 h-1 bg-orange-500"></div>
               <p className="text-center text-gray-700">
                 DAS3D 프로젝트의 개발자로 시스템 개발 및 유지보수에 참여했습니다.
               </p>
