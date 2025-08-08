@@ -45,7 +45,7 @@ function App() {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <div className="text-xl font-bold text-gray-800">
-              DAS3D Portfolio
+              Jung Seunghoon's Portfolio
             </div>
             <nav className="hidden md:flex space-x-8">
               <button 

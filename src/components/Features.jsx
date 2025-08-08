@@ -206,8 +206,8 @@ const Features = () => {
                          ${getColorClasses(feature.color, 'bgTo')}`}
               onClick={() => openPopup(feature)}
             >
-                             {/* 이미지 썸네일 */}
-               <div className={`mb-4 rounded-lg overflow-hidden border-2 h-32 bg-gray-50 relative ${getColorClasses(feature.color, 'border')}`}>
+              {/* 이미지 썸네일 */}
+               <div className={`mb-4 rounded-lg overflow-hidden border-2 h-32 bg-gray-100 relative ${getColorClasses(feature.color, 'border')}`}>
                  <img 
                    src={feature.image} 
                    alt={feature.title} 
@@ -249,7 +249,7 @@ const Features = () => {
               {/* 이미지와 설명을 나란히 배치 */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                 <div className="space-y-4">
-                  <div className={`w-full h-80 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} overflow-hidden cursor-pointer`}>
+                  <div className={`w-full h-80 bg-gray-100 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} overflow-hidden cursor-pointer`}>
                     <img 
                       src={selectedFeature.image} 
                       alt={selectedFeature.title} 
@@ -260,7 +260,7 @@ const Features = () => {
                   </div>
                   {/* 추가 이미지 공간 */}
                   <div className="grid grid-cols-2 gap-4">
-                    <div className={`h-40 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} cursor-pointer`}>
+                    <div className={`h-40 bg-gray-100 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} cursor-pointer`}>
                       <img 
                         src={selectedFeature.subimage1} 
                         alt={selectedFeature.title} 
@@ -269,7 +269,7 @@ const Features = () => {
                         onClick={() => window.open(selectedFeature.subimage1, '_blank')}
                       />
                     </div>
-                    <div className={`h-40 bg-gray-50 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} cursor-pointer`}>
+                    <div className={`h-40 bg-gray-100 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} cursor-pointer`}>
                       <img 
                         src={selectedFeature.subimage2} 
                         alt={selectedFeature.title} 

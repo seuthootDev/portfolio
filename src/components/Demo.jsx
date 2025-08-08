@@ -26,12 +26,12 @@ const Demo = () => {
             </div>
           </div>
           <div className="mt-4">
-            <h4 className="font-bold text-gray-800 mb-2">주요 기능</h4>
+            <h4 className="font-bold text-gray-800 mb-2">영상 과정 설명</h4>
             <ul className="text-sm text-gray-600 space-y-1">
               <li>• 3D 모델 로딩 및 시각화</li>
               <li>• 가스 확산 시뮬레이션 실행</li>
               <li>• 센서 배치 최적화 과정</li>
-              <li>• 워크플로우 구성 및 실행</li>
+              <li>• 각종 시각화 위젯을 통한 데이터 시각화</li>
             </ul>
           </div>
         </div>
@@ -120,14 +120,14 @@ const Demo = () => {
               <h4 className="font-bold text-gray-800 mb-3">대시보드</h4>
               <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
                 <img
-                  src="https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754624662/123_gec0gw.gif"
+                  src="https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754629043/123_mdbw3b.gif"
                   alt="대시보드"
                   className="w-full h-full object-contain cursor-pointer"
                   onError={handleImageError}
-                  onClick={() => window.open("https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754624662/123_gec0gw.gif", '_blank')}
+                  onClick={() => window.open("https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754629043/123_mdbw3b.gif", '_blank')}
                 />
               </div>
-              <p className="text-sm text-gray-600 mt-2">실시간 모니터링과 분석 결과를 한 화면에서 확인</p>
+              <p className="text-sm text-gray-600 mt-2">케이스 별 2가지 포뮬레이션 기반 분석 결과 확인</p>
             </div>
           </div>
         </div>
