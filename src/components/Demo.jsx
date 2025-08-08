@@ -41,6 +41,12 @@ const Demo = () => {
                 <h4 className="font-bold text-gray-800 mb-2">메인 인터페이스</h4>
                 <div className="aspect-video bg-gray-300 rounded flex items-center justify-center">
                   <i className="fas fa-desktop text-2xl text-gray-500"></i>
+                  <img
+                    src="https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754533823/1123.png"
+                    alt="프로젝트 개요 이미지"
+                    className="max-w-full max-h-full object-contain"
+                    onError={handleImageError}
+                  />
                 </div>
               </div>
               

@@ -69,6 +69,9 @@ const features = [
   {
     title: '워크플로우',
     description: '노드 기반 워크플로우로 복잡한 분석 과정을 시각적으로 구성할 수 있습니다.',
+    subdescription1: '각 노드는 독립적으로 실행되며, 데이터 흐름을 시각적으로 추적할 수 있어 분석 과정의 가독성과 효율성이 향상됩니다.',
+    subdescription2: '사용자는 노드를 자유롭게 추가, 연결, 수정할 수 있어 다양한 분석 시나리오를 유연하게 구성할 수 있습니다.',
+    subdescription3: '표준 템플릿과 사용자 정의 템플릿을 모두 지원하여 반복 작업 시간을 절감할 수 있습니다.',
     icon: 'fas fa-project-diagram',
     color: 'blue',
     image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754553881/1-3.png',
@@ -78,6 +81,9 @@ const features = [
   {
     title: '3D 모델 시각화',
     description: 'VTK를 활용한 고성능 3D 렌더링으로 산업 시설의 복잡한 구조를 직관적으로 표현합니다.',
+    subdescription1: '확대/축소, 회전 등 상호작용 기능을 제공하여 다양한 각도에서 모델을 분석할 수 있습니다.',
+    subdescription2: '다양한 렌더링 모드와 색상 맵을 통해 주요 부위를 강조할 수 있습니다.',
+    subdescription3: '실시간 데이터와 결합하여 동적인 상태 변화를 시각적으로 표현할 수 있습니다.',
     icon: 'fas fa-cube',
     color: 'green',
     image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754554450/2-2.png',
@@ -87,15 +93,21 @@ const features = [
   {
     title: '센서 최적화',
     description: 'Chama 라이브러리를 활용한 센서 배치 최적화로 탐지 효율을 극대화합니다.',
+    subdescription1: '탐지 범위와 환경 변수를 종합적으로 고려하여 최소한의 센서로 최대 커버리지를 확보합니다.',
+    subdescription2: '시뮬레이션 결과를 기반으로 최적 배치안을 자동으로 제안합니다.',
+    subdescription3: '환경 변화나 설비 확장 시 자동으로 최적화안을 재계산할 수 있습니다.',
     icon: 'fas fa-search-location',
     color: 'orange',
     image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754554853/3-1.png',
-    subimage1: '/images/1.png',
+    subimage1: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754554853/3-1.png',
     subimage2: '/images/1.png'
   },
   {
     title: '가스 클라우드 시각화',
     description: '3D 가스 확산 시뮬레이션 결과를 직관적인 클라우드 형태로 시각화합니다.',
+    subdescription1: '가스의 확산 범위와 농도 변화를 반투명 형태로 표현하여 위험 구역을 직관적으로 확인할 수 있습니다.',
+    subdescription2: '시간 경과에 따른 변화도 애니메이션으로 재생 가능하여, 사고 시나리오 분석에 활용할 수 있습니다.',
+    subdescription3: '다양한 기상 조건을 시뮬레이션하여 최악의 상황을 사전에 대비할 수 있습니다.',
     icon: 'fas fa-cloud',
     color: 'purple',
     image: '/images/1.png',
@@ -105,15 +117,21 @@ const features = [
   {
     title: '컨투어 시각화',
     description: '가스 농도 분포를 컨투어 맵으로 표현하여 위험 구역을 명확하게 표시합니다.',
+    subdescription1: '색상 구간별로 농도 수준을 구분해 시각적으로 위험도를 파악할 수 있습니다.',
+    subdescription2: '평면 또는 단면을 기준으로 데이터 분포를 분석할 수 있어, 시설 내 특정 구역의 위험도 비교가 가능합니다.',
+    subdescription3: '다층 컨투어 맵을 생성하여 시간에 따른 변화 추세를 한눈에 확인할 수 있습니다.',
     icon: 'fas fa-chart-area',
     color: 'red',
-    image: '/images/1.png',
-    subimage1: '/images/1.png',
-    subimage2: '/images/1.png'
+    image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754555354/4-3.png',
+    subimage1: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754555353/4-2.png',
+    subimage2: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754555375/6-2.png'
   },
   {
     title: '클립퍼',
     description: '3D 모델의 특정 영역을 클리핑하여 내부 구조를 자세히 분석할 수 있습니다.',
+    subdescription1: '모델 외부를 잘라내어 내부 장치나 배관 구조를 쉽게 확인할 수 있습니다.',
+    subdescription2: '복잡한 구조물의 내부를 단계적으로 노출해 점진적으로 분석할 수 있습니다.',
+    subdescription3: '다양한 절단면 설정을 저장하고 비교 분석할 수 있습니다.',
     icon: 'fas fa-cut',
     color: 'teal',
     image: '/images/1.png',
@@ -123,6 +141,9 @@ const features = [
   {
     title: '대시보드',
     description: '시뮬레이션 결과와 센서 데이터를 통합하여 실시간 모니터링 대시보드를 제공합니다.',
+    subdescription1: '주요 지표와 그래프를 한 화면에서 확인할 수 있어 빠른 의사결정이 가능합니다.',
+    subdescription2: '알림 및 경고 기능을 통해 위험 상황을 즉시 인지할 수 있습니다.',
+    subdescription3: '사용자별 맞춤형 위젯 구성을 지원하여 필요한 정보만 집중적으로 확인할 수 있습니다.',
     icon: 'fas fa-tachometer-alt',
     color: 'indigo',
     image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754555365/5-3.png',
@@ -132,6 +153,9 @@ const features = [
   {
     title: '도면 편집',
     description: '3D 모델의 특정 영역을 클리핑하여 내부 구조를 자세히 분석할 수 있습니다.',
+    subdescription1: '도면의 특정 구역에 주석, 치수, 마킹을 추가하여 분석 및 보고서 작성에 활용할 수 있습니다.',
+    subdescription2: '레이어별 편집 기능을 제공해 설계 변경 사항을 손쉽게 반영할 수 있습니다.',
+    subdescription3: '도면 편집 이력을 저장하고 이전 버전과 비교할 수 있습니다.',
     icon: 'fas fa-pencil-ruler',
     color: 'pink',
     image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754555353/4-1.png',
@@ -139,6 +163,8 @@ const features = [
     subimage2: '/images/1.png'
   },
 ];
+
+
 
 const Features = () => {
   // 팝업에 표시할 기능을 관리하는 State
@@ -262,17 +288,18 @@ const Features = () => {
                   </div>
                   
                   <div className="border-t pt-6">
-                    <h4 className="text-xl font-semibold mb-3 text-gray-800">기술 스택</h4>
-                    <p className="text-gray-600 leading-relaxed">
-                      {selectedFeature.title === '워크플로우' && '노드 기반 워크플로우로 복잡한 분석 과정을 시각적으로 구성할 수 있습니다.'}
-                      {selectedFeature.title === '3D 모델 시각화' && 'VTK를 활용한 고성능 3D 렌더링으로 산업 시설의 복잡한 구조를 직관적으로 표현합니다.'}
-                      {selectedFeature.title === '센서 최적화' && 'Chama 라이브러리를 활용한 센서 배치 최적화로 탐지 효율을 극대화합니다.'}
-                      {selectedFeature.title === '가스 클라우드 시각화' && '3D 가스 확산 시뮬레이션 결과를 직관적인 클라우드 형태로 시각화합니다.'}
-                      {selectedFeature.title === '컨투어 시각화' && '가스 농도 분포를 컨투어 맵으로 표현하여 위험 구역을 명확하게 표시합니다.'}
-                      {selectedFeature.title === '클립퍼' && '3D 모델의 특정 영역을 클리핑하여 내부 구조를 자세히 분석할 수 있습니다.'}
-                      {selectedFeature.title === '결과 대시보드' && '시뮬레이션 결과와 센서 데이터를 통합하여 실시간 모니터링 대시보드를 제공합니다.'}
-                      {selectedFeature.title === '웹 버전' && '데스크톱 애플리케이션을 웹 기반으로 확장하여 원격 접근이 가능합니다.'}
-                    </p>
+                    <h4 className="text-xl font-semibold mb-3 text-gray-800">작동 방식</h4>
+                    <div className="space-y-4">
+                      {selectedFeature.subdescription1 && (
+                        <p className="text-gray-600 leading-relaxed">{selectedFeature.subdescription1}</p>
+                      )}
+                      {selectedFeature.subdescription2 && (
+                        <p className="text-gray-600 leading-relaxed">{selectedFeature.subdescription2}</p>
+                      )}
+                      {selectedFeature.subdescription3 && (
+                        <p className="text-gray-600 leading-relaxed">{selectedFeature.subdescription3}</p>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>
