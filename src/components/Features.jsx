@@ -98,9 +98,9 @@ const features = [
     subdescription3: '환경 변화나 설비 확장 시 자동으로 최적화안을 재계산할 수 있습니다.',
     icon: 'fas fa-search-location',
     color: 'orange',
-    image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754554853/3-1.png',
-    subimage1: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754554853/3-1.png',
-    subimage2: '/images/1.png'
+    image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754620354/6%EC%B8%B52_c5pqvd.png',
+    subimage1: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754624911/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-08-08_12-48-15_igiriy.png',
+    subimage2: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754554853/3-1.png'
   },
   {
     title: '가스 클라우드 시각화',
@@ -110,9 +110,9 @@ const features = [
     subdescription3: '다양한 기상 조건을 시뮬레이션하여 최악의 상황을 사전에 대비할 수 있습니다.',
     icon: 'fas fa-cloud',
     color: 'purple',
-    image: '/images/1.png',
-    subimage1: '/images/1.png',
-    subimage2: '/images/1.png'
+    image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754624654/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-08-08_12-43-51_ndpxmm.png',
+    subimage1: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754624707/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-08-08_12-44-41_dbnez6.png',
+    subimage2: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754624857/image_u4fnrg.png'
   },
   {
     title: '컨투어 시각화',
@@ -134,9 +134,9 @@ const features = [
     subdescription3: '다양한 절단면 설정을 저장하고 비교 분석할 수 있습니다.',
     icon: 'fas fa-cut',
     color: 'teal',
-    image: '/images/1.png',
-    subimage1: '/images/1.png',
-    subimage2: '/images/1.png'
+    image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754625226/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-08-08_12-53-18_vzedt4.png',
+    subimage1: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754625129/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2025-08-08_12-51-50_pmq9ud.png',
+    subimage2: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754625181/screenshot_20250808_125035_b0ytwi.png'
   },
   {
     title: '대시보드',
@@ -159,8 +159,8 @@ const features = [
     icon: 'fas fa-pencil-ruler',
     color: 'pink',
     image: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754555353/4-1.png',
-    subimage1: '/images/1.png',
-    subimage2: '/images/1.png'
+    subimage1: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754625417/screenshot_20250808_125555_hgy1l6.png',
+    subimage2: 'https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754625417/screenshot_20250808_125640_bvjnkr.png'
   },
 ];
 
