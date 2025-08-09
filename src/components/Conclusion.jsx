@@ -45,7 +45,7 @@ const Conclusion = () => {
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold mb-1">함께할 기회를 찾고 있습니다.</h3>
-              <p className="text-blue-100 text-sm">시뮬레이션 · 시각화 · 풀스택 분야 제안을 환영합니다.</p>
+              <p className="text-blue-100 text-sm">백엔드 · 풀스택 분야 제안을 환영합니다.</p>
             </div>
             <div className="flex justify-center items-center gap-3">
               <a

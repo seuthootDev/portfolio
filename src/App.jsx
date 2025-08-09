@@ -57,6 +57,14 @@ function App() {
                 Home
               </button>
               <button 
+                onClick={() => scrollToSection('demo')}
+                className={`text-sm font-medium transition-colors ${
+                  activeSection === 'demo' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
+                }`}
+              >
+                Demo
+              </button>
+              <button 
                 onClick={() => scrollToSection('about')}
                 className={`text-sm font-medium transition-colors ${
                   activeSection === 'about' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
@@ -88,14 +96,6 @@ function App() {
               >
                 Features
               </button>
-              <button 
-                onClick={() => scrollToSection('demo')}
-                className={`text-sm font-medium transition-colors ${
-                  activeSection === 'demo' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
-                }`}
-              >
-                Demo
-              </button>
             </nav>
           </div>
         </div>
@@ -105,6 +105,9 @@ function App() {
       <main className="pt-16">
         <section id="hero">
           <Hero />
+        </section>
+        <section id="demo">
+          <Demo />
         </section>
         <section id="about">
           <About />
@@ -117,9 +120,6 @@ function App() {
         </section>
         <section id="features">
           <Features />
-        </section>
-        <section id="demo">
-          <Demo />
         </section>
         <section id="conclusion">
           <Conclusion />
