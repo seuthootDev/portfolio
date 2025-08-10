@@ -15,7 +15,7 @@ const Demo = () => {
           <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
             <div className="text-center">
               <i className="fas fa-play-circle text-6xl text-gray-400 mb-4"></i>
-              <p className="text-gray-600">준비중입니다...</p>
+              <p className="text-gray-600">준비중입니다..</p>
             </div>
           </div>
           <div className="mt-4">
