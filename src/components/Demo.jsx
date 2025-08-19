@@ -12,11 +12,14 @@ const Demo = () => {
         {/* Demo Video - 상단에 크게 배치 */}
         <div className="bg-white p-8 rounded-lg shadow-md mb-8">
           <h3 className="text-2xl font-bold text-gray-800 mb-6">시스템 데모 영상</h3>
-          <div className="aspect-video bg-gray-200 rounded-lg flex items-center justify-center overflow-hidden">
-            <div className="text-center">
-              <i className="fas fa-play-circle text-6xl text-gray-400 mb-4"></i>
-              <p className="text-gray-600">준비중입니다..</p>
-            </div>
+          <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden">
+            <video 
+              controls 
+              className="w-full h-full object-cover rounded-lg"
+            >
+              <source src="https://res.cloudinary.com/dvnfrjqcr/video/upload/v1755580144/123_hokgn7.mp4" type="video/mp4" />
+              해당 브라우저는 동영상을 지원하지 않습니다.
+            </video>
           </div>
           <div className="mt-4">
             <h4 className="font-bold text-gray-800 mb-2">영상 과정 설명</h4>
