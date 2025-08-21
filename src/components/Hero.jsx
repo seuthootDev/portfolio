@@ -45,9 +45,9 @@ const Hero = () => {
             DAS3D <span className="text-green-400">-</span> 3D 누출 시뮬레이션 및 센서배치 최적화 프로그램
           </h1>
           <h2 className="text-lg sm:text-xl md:text-2xl text-green-300 font-light mb-6 md:mb-12">
-            PySide6 + VTK 기반 워크플로우 방식의 QUI
+            QT 기반 WorkFlow 방식의 QUI
           </h2>
-          <div className="flex items-center mt-1">
+          <div className="flex items-center mt-1 mb-15">
             <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-green-500 bg-opacity-20 flex items-center justify-center">
               <i className="fas fa-user text-green-300 text-base md:text-lg"></i>
             </div>
@@ -60,7 +60,7 @@ const Hero = () => {
       </div>
       
       {/* Footer with icons representing key technologies */}
-      <div className="absolute bottom-8 md:bottom-20 left-0 right-0">
+      <div className="absolute bottom-8 md:bottom-10 left-0 right-0">
         <div className="container mx-auto px-8">
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-gray-400">
             <div className="flex items-center">

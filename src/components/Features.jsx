@@ -140,7 +140,7 @@ const features = [
   },
   {
     title: '대시보드',
-    description: '시뮬레이션 결과와 센서 데이터를 통합하여 실시간 모니터링 대시보드를 제공합니다.',
+    description: '센서 최적화 결과를 시각화한 대시보드를 제공합니다.',
     subdescription1: '주요 지표와 그래프를 한 화면에서 확인할 수 있어 빠른 의사결정이 가능합니다.',
     subdescription2: '분석 인사이트를 제공해 사용자의 이해를 돕습니다.',
     subdescription3: 'PDF와 CSV로 내보낼 수 있습니다.',

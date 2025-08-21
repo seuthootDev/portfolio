@@ -25,9 +25,9 @@ const Demo = () => {
             <h4 className="font-bold text-gray-800 mb-2">영상 과정 설명</h4>
             <ul className="text-sm text-gray-600 space-y-1">
               <li>• 3D 모델 로딩 및 시각화</li>
-              <li>• 가스 확산 시뮬레이션 실행</li>
-              <li>• 센서 배치 최적화 과정</li>
-              <li>• 각종 시각화 위젯을 통한 데이터 시각화</li>
+              <li>• 센서 그리드 생성</li>
+              <li>• 확산 데이터 임포트</li>
+              <li>• 센서 배치 최적화 및 배치좌표 시각화</li>
             </ul>
           </div>
         </div>
@@ -48,7 +48,7 @@ const Demo = () => {
                   onClick={() => window.open("https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754621161/123_yyljl7.gif", '_blank')}
                 />
               </div>
-              <p className="text-sm text-gray-600 mt-2">노드 기반으로 워크플로우를 구성하고 실행하는 화면</p>
+              <p className="text-sm text-gray-600 mt-2">노드 기반 워크플로우를 구성하고 실행하는 화면</p>
             </div>
             
             {/* 스크린샷 2 - 워크플로우 에디터 */}
@@ -93,7 +93,7 @@ const Demo = () => {
                   onClick={() => window.open("https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754555727/7-2.gif", '_blank')}
                 />
               </div>
-              <p className="text-sm text-gray-600 mt-2">주석/치수/마킹 등 도면 편집과 변경 이력 관리</p>
+              <p className="text-sm text-gray-600 mt-2">트랙볼 등 입력 장치를 이용한 오브젝트 변환 및 추가·삭제</p>
             </div>
 
             {/* 스크린샷 5 - 가스 클라우드 */}
@@ -108,7 +108,7 @@ const Demo = () => {
                   onClick={() => window.open("https://res.cloudinary.com/dvnfrjqcr/image/upload/v1754624662/123_gec0gw.gif", '_blank')}
                 />
               </div>
-              <p className="text-sm text-gray-600 mt-2">가스 확산 결과를 클라우드 형태로 시각화</p>
+              <p className="text-sm text-gray-600 mt-2">가스 확산 데이터를 클라우드 형태로 시각화</p>
             </div>
 
             {/* 스크린샷 6 - 대시보드 */}
