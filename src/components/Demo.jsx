@@ -17,7 +17,7 @@ const Demo = () => {
               controls 
               className="w-full h-full object-cover rounded-lg"
             >
-              <source src="https://res.cloudinary.com/dvnfrjqcr/video/upload/v1755580144/123_hokgn7.mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dvnfrjqcr/video/upload/v1756966057/1%EB%B6%84%EC%86%8C%EA%B0%9C%EC%98%81%EC%83%81_bmwytt.mp4" type="video/mp4" />
               해당 브라우저는 동영상을 지원하지 않습니다.
             </video>
           </div>
