@@ -42,7 +42,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="font-bold text-blue-700">VTK</h4>
-                    <p className="text-gray-700">3D 모델, CFD 가스 클라우드,<br/> 컨투어 시각화 및 인터랙션 구현</p>
+                    <p className="text-gray-700">3D 모델, CFD 확산 데이터 시각화,<br/> 컨투어 시각화 및 인터랙션 구현</p>
                   </div>
                 </div>
                 <div className="skill-item flex items-start p-4 bg-green-50 rounded-lg">
