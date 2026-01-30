@@ -187,11 +187,11 @@ const Features = () => {
   };
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-[#0f0f14] py-16">
       <div className="container mx-auto px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">주요 기능</h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <h2 className="text-3xl font-bold text-white mb-4">주요 기능</h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
             DAS3D 시스템의 핵심 기능들을 소개합니다. 각 기능은 독립적인 위젯으로 구현되어 
             워크플로우를 통해 유연하게 조합할 수 있습니다.
           </p>
@@ -202,30 +202,29 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`flex flex-col p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer
-                         ${getColorClasses(feature.color, 'bgTo')}`}
+              className="flex flex-col p-6 rounded-lg border border-gray-400/30 bg-gray-800 hover:border-gray-400/50 transition-all duration-300 cursor-pointer"
               onClick={() => openPopup(feature)}
             >
               {/* 이미지 썸네일 */}
-               <div className={`mb-4 rounded-lg overflow-hidden border-2 h-32 bg-gray-100 relative ${getColorClasses(feature.color, 'border')}`}>
+               <div className="mb-4 rounded-lg overflow-hidden border-2 h-32 bg-gray-900 relative border-gray-400/30">
                  <img 
                    src={feature.image} 
                    alt={feature.title} 
                    className="w-full h-full object-contain" 
                    onError={handleImageError}
                  />
-                 <div className="absolute inset-0 bg-black bg-opacity-15 flex items-center justify-center">
+                 <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                    <div className="text-white text-sm font-medium">클릭해서 확대</div>
                  </div>
                </div>
               
               <div className="flex items-center mb-2">
-                <div className={`w-10 h-10 ${getColorClasses(feature.color, 'icon')} rounded-full flex items-center justify-center mr-3`}>
-                  <i className={`${feature.icon} text-white text-lg`}></i>
+                <div className="w-10 h-10 bg-gray-500/20 border border-gray-400/40 rounded-full flex items-center justify-center mr-3">
+                  <i className={`${feature.icon} text-gray-400 text-lg`}></i>
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">{feature.title}</h3>
+                <h3 className="text-xl font-bold text-white">{feature.title}</h3>
               </div>
-              <p className="text-gray-600 text-sm">{feature.description}</p>
+              <p className="text-gray-400 text-sm">{feature.description}</p>
             </div>
           ))}
         </div>
@@ -233,14 +232,14 @@ const Features = () => {
       
             {/* 팝업 모달 */}
       {selectedFeature && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-lg shadow-xl max-w-6xl w-full max-h-[95vh] overflow-y-auto">
+        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4">
+          <div className="bg-gray-900 border border-gray-700 rounded-lg shadow-xl max-w-6xl w-full max-h-[95vh] overflow-y-auto">
             <div className="p-8">
               <div className="flex justify-between items-start mb-6">
-                <h3 className="text-4xl font-bold text-gray-800">{selectedFeature.title}</h3>
+                <h3 className="text-4xl font-bold text-white">{selectedFeature.title}</h3>
                 <button 
                   onClick={closePopup}
-                  className="text-gray-500 hover:text-gray-800 transition-colors"
+                  className="text-gray-400 hover:text-white transition-colors"
                 >
                   <i className="fas fa-times text-3xl"></i>
                 </button>
@@ -249,7 +248,7 @@ const Features = () => {
               {/* 이미지와 설명을 나란히 배치 */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
                 <div className="space-y-4">
-                  <div className={`w-full h-80 bg-gray-100 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} overflow-hidden cursor-pointer`}>
+                  <div className="w-full h-80 bg-gray-800 border-2 border-green-400/30 rounded-lg flex items-center justify-center overflow-hidden cursor-pointer">
                     <img 
                       src={selectedFeature.image} 
                       alt={selectedFeature.title} 
@@ -260,7 +259,7 @@ const Features = () => {
                   </div>
                   {/* 추가 이미지 공간 */}
                   <div className="grid grid-cols-2 gap-4">
-                    <div className={`h-40 bg-gray-100 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} cursor-pointer`}>
+                    <div className="h-40 bg-gray-800 border-2 border-green-400/30 rounded-lg flex items-center justify-center cursor-pointer">
                       <img 
                         src={selectedFeature.subimage1} 
                         alt={selectedFeature.title} 
@@ -269,7 +268,7 @@ const Features = () => {
                         onClick={() => window.open(selectedFeature.subimage1, '_blank')}
                       />
                     </div>
-                    <div className={`h-40 bg-gray-100 border-2 rounded-lg flex items-center justify-center ${getColorClasses(selectedFeature.color, 'border')} cursor-pointer`}>
+                    <div className="h-40 bg-gray-800 border-2 border-green-400/30 rounded-lg flex items-center justify-center cursor-pointer">
                       <img 
                         src={selectedFeature.subimage2} 
                         alt={selectedFeature.title} 
@@ -283,21 +282,21 @@ const Features = () => {
                 
                 <div className="space-y-6">
                   <div>
-                    <h4 className="text-2xl font-semibold mb-4 text-gray-800">기능 설명</h4>
-                    <p className="text-gray-700 leading-relaxed text-lg">{selectedFeature.description}</p>
+                    <h4 className="text-2xl font-semibold mb-4 text-white">기능 설명</h4>
+                    <p className="text-gray-300 leading-relaxed text-lg">{selectedFeature.description}</p>
                   </div>
                   
-                  <div className="border-t pt-6">
-                    <h4 className="text-xl font-semibold mb-3 text-gray-800">작동 방식</h4>
+                  <div className="border-t border-gray-700 pt-6">
+                    <h4 className="text-xl font-semibold mb-3 text-white">작동 방식</h4>
                     <div className="space-y-4">
                       {selectedFeature.subdescription1 && (
-                        <p className="text-gray-600 leading-relaxed">{selectedFeature.subdescription1}</p>
+                        <p className="text-gray-400 leading-relaxed">{selectedFeature.subdescription1}</p>
                       )}
                       {selectedFeature.subdescription2 && (
-                        <p className="text-gray-600 leading-relaxed">{selectedFeature.subdescription2}</p>
+                        <p className="text-gray-400 leading-relaxed">{selectedFeature.subdescription2}</p>
                       )}
                       {selectedFeature.subdescription3 && (
-                        <p className="text-gray-600 leading-relaxed">{selectedFeature.subdescription3}</p>
+                        <p className="text-gray-400 leading-relaxed">{selectedFeature.subdescription3}</p>
                       )}
                     </div>
                   </div>

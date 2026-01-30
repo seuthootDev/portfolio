@@ -4,18 +4,24 @@ import mermaid from 'mermaid';
 
 const Architecture = () => {
   const mermaidRef = useRef(null);
-
-  useEffect(() => {
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: 'default',
-      flowchart: {
-        useMaxWidth: true,
-        htmlLabels: true,
-        curve: 'basis'
-      }
-    });
     
+    useEffect(() => {
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'dark',
+        themeVariables: {
+          textColor: '#000000',
+        background: '#1f2937',
+        mainBkg: '#111111',
+        },
+        flowchart: {
+          useMaxWidth: true,
+          htmlLabels: true,
+          curve: 'basis'
+        }
+      });
+    
+      
     if (mermaidRef.current) {
       mermaid.render('mermaid-diagram', `
         flowchart TD
@@ -101,14 +107,14 @@ const Architecture = () => {
   }, []);
 
   return (
-    <section className="min-h-[51vh] bg-gray-100 py-16">
+    <section className="min-h-[51vh] bg-[#0f0f14] py-16">
       <div className="container mx-auto px-8">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">Architecture</h2>
+        <h2 className="text-3xl font-bold text-white mb-4">Architecture</h2>
         
         {/* Mermaid Diagram */}
         <div className="mb-12">
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">DAS3D 시스템 아키텍처 다이어그램</h3>
+          <div className="bg-gray-800 border border-gray-400/30 rounded-lg p-6">
+            <h3 className="text-xl font-bold text-white mb-4">DAS3D 시스템 아키텍처 다이어그램</h3>
             <div ref={mermaidRef} className="w-full overflow-x-auto"></div>
           </div>
         </div>
@@ -116,73 +122,73 @@ const Architecture = () => {
         {/* Layer Descriptions */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           {/* UI Layer */}
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-gray-800 border border-gray-400/30 rounded-lg p-6">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
-                <FaDesktop className="text-2xl text-white" />
+              <div className="w-12 h-12 bg-gray-500/20 border border-gray-400/40 rounded-full flex items-center justify-center mr-4">
+                <FaDesktop className="text-2xl text-gray-400" />
               </div>
-              <h3 className="text-xl font-bold text-green-700">사용자 인터페이스 레이어</h3>
+              <h3 className="text-xl font-bold text-white">사용자 인터페이스 레이어</h3>
             </div>
             <div className="space-y-2">
               <div className="flex items-center">
-                <FaCheckCircle className="text-green-500 mr-2" />
-                <span className="text-sm text-gray-700">main.py: 애플리케이션 진입점</span>
+                <FaCheckCircle className="text-gray-500 mr-2" />
+                <span className="text-sm text-gray-300">main.py: 애플리케이션 진입점</span>
               </div>
               <div className="flex items-center">
-                <FaCheckCircle className="text-green-500 mr-2" />
-                <span className="text-sm text-gray-700">WorkFlowWindow: 좌측 패널 제어</span>
+                <FaCheckCircle className="text-gray-500 mr-2" />
+                <span className="text-sm text-gray-300">WorkFlowWindow: 좌측 패널 제어</span>
               </div>
               <div className="flex items-center">
-                <FaCheckCircle className="text-green-500 mr-2" />
-                <span className="text-sm text-gray-700">VisualizationWindow: 3D 뷰어</span>
+                <FaCheckCircle className="text-gray-500 mr-2" />
+                <span className="text-sm text-gray-300">VisualizationWindow: 3D 뷰어</span>
               </div>
             </div>
           </div>
 
           {/* Workflow Engine Layer */}
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-gray-800 border border-gray-400/30 rounded-lg p-6">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
-                <FaProjectDiagram className="text-2xl text-white" />
+              <div className="w-12 h-12 bg-gray-500/20 border border-gray-400/40 rounded-full flex items-center justify-center mr-4">
+                <FaProjectDiagram className="text-2xl text-gray-400" />
               </div>
-              <h3 className="text-xl font-bold text-blue-700">워크플로우 엔진 레이어</h3>
+              <h3 className="text-xl font-bold text-white">워크플로우 엔진 레이어</h3>
             </div>
             <div className="space-y-2">
               <div className="flex items-center">
-                <FaCheckCircle className="text-blue-500 mr-2" />
-                <span className="text-sm text-gray-700">WorkFlowScene: 워크플로우 시각화</span>
+                <FaCheckCircle className="text-gray-500 mr-2" />
+                <span className="text-sm text-gray-300">WorkFlowScene: 워크플로우 시각화</span>
               </div>
               <div className="flex items-center">
-                <FaCheckCircle className="text-blue-500 mr-2" />
-                <span className="text-sm text-gray-700">NodeConnectionManager: 연결 관리</span>
+                <FaCheckCircle className="text-gray-500 mr-2" />
+                <span className="text-sm text-gray-300">NodeConnectionManager: 연결 관리</span>
               </div>
               <div className="flex items-center">
-                <FaCheckCircle className="text-blue-500 mr-2" />
-                <span className="text-sm text-gray-700">실시간 데이터 동기화</span>
+                <FaCheckCircle className="text-gray-500 mr-2" />
+                <span className="text-sm text-gray-300">실시간 데이터 동기화</span>
               </div>
             </div>
           </div>
 
           {/* Widget Layer */}
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-gray-800 border border-gray-400/30 rounded-lg p-6">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4">
-                <FaThLarge className="text-2xl text-white" />
+              <div className="w-12 h-12 bg-gray-500/20 border border-gray-400/40 rounded-full flex items-center justify-center mr-4">
+                <FaThLarge className="text-2xl text-gray-400" />
               </div>
-              <h3 className="text-xl font-bold text-orange-700">위젯 레이어</h3>
+              <h3 className="text-xl font-bold text-white">위젯 레이어</h3>
             </div>
             <div className="space-y-2">
               <div className="flex items-center">
-                <FaCheckCircle className="text-orange-500 mr-2" />
-                <span className="text-sm text-gray-700">데이터 처리 위젯 (5개)</span>
+                <FaCheckCircle className="text-gray-500 mr-2" />
+                <span className="text-sm text-gray-300">데이터 처리 위젯 (5개)</span>
               </div>
               <div className="flex items-center">
-                <FaCheckCircle className="text-orange-500 mr-2" />
-                <span className="text-sm text-gray-700">시각화 위젯 (3개)</span>
+                <FaCheckCircle className="text-gray-500 mr-2" />
+                <span className="text-sm text-gray-300">시각화 위젯 (3개)</span>
               </div>
               <div className="flex items-center">
-                <FaCheckCircle className="text-orange-500 mr-2" />
-                <span className="text-sm text-gray-700">모듈화된 기능</span>
+                <FaCheckCircle className="text-gray-500 mr-2" />
+                <span className="text-sm text-gray-300">모듈화된 기능</span>
               </div>
             </div>
           </div>

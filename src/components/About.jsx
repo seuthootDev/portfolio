@@ -2,14 +2,14 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="min-h-[50vh] bg-gray-100 py-16">
+    <section className="min-h-[50vh] bg-[#0f0f14] py-16">
       <div className="container mx-auto px-8">
-      <h2 className="text-3xl font-bold text-gray-800 mb-4">About</h2>
+      <h2 className="text-3xl font-bold text-white mb-4">About</h2>
         <div className="flex flex-col lg:flex-row min-h-[50vh]">
           {/* Left Column - Profile */}
           <div className="w-full lg:w-1/3 flex flex-col items-center justify-center lg:pr-8 lg:mb-0">
             <div className="content-box w-full p-8 flex flex-col items-center">
-              <div className="w-41 h-41 rounded-full bg-blue-100 flex items-center justify-center mb-6 border-4 border-blue-500 overflow-hidden">
+              <div className="w-41 h-41 rounded-full bg-gray-800 flex items-center justify-center mb-6 border-4 border-gray-500/60 overflow-hidden">
                 <img
                   src="https://github.com/seuthootDev.png" 
                   alt="정승훈 프로필"
@@ -21,11 +21,11 @@ const About = () => {
                     e.target.nextSibling.style.display = 'flex';
                   }}
                 />
-                <i className="fas fa-user text-6xl text-blue-500 absolute" style={{display: 'none'}}></i>
+                <i className="fas fa-user text-6xl text-gray-400 absolute" style={{display: 'none'}}></i>
               </div>
-              <h2 className="text-3xl font-bold text-blue-700 mb-2">정승훈</h2>
-              <p className="text-xl text-blue-600 mb-4">소프트웨어 개발자</p>
-              <p className="text-center text-gray-700">
+              <h2 className="text-3xl font-bold text-white mb-2">정승훈</h2>
+              <p className="text-xl text-green-400 mb-4">소프트웨어 개발자</p>
+              <p className="text-center text-gray-300">
                 DAS3D 프로젝트의 개발자로 시스템 개발 및 유지보수에 참여했습니다.
               </p>
             </div>
@@ -34,48 +34,48 @@ const About = () => {
           {/* Right Column - Skills and Experience */}
           <div className="w-full lg:w-2/3 lg:pl-8">
             <div className="content-box h-full p-8">
-              <h3 className="text-2xl font-bold text-blue-700 mb-6">기술 스택 및 역할</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">기술 스택 및 역할</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-                <div className="skill-item flex items-start p-4 bg-blue-50 rounded-lg">
-                  <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
-                    <i className="fas fa-laptop-code text-blue-600"></i>
+                <div className="skill-item flex items-start p-4 bg-gray-800 border border-gray-400/30 rounded-lg">
+                  <div className="w-12 h-12 rounded-full bg-gray-500/20 border border-gray-400/40 flex items-center justify-center mr-4 flex-shrink-0">
+                    <i className="fas fa-laptop-code text-gray-400"></i>
                   </div>
                   <div>
-                    <h4 className="font-bold text-blue-700">VTK</h4>
-                    <p className="text-gray-700">3D 모델, CFD 확산 데이터 시각화,<br/> 컨투어 시각화 및 인터랙션 구현</p>
+                    <h4 className="font-bold text-white">VTK</h4>
+                    <p className="text-gray-300">3D 모델, CFD 확산 데이터 시각화,<br/> 컨투어 시각화 및 인터랙션 구현</p>
                   </div>
                 </div>
-                <div className="skill-item flex items-start p-4 bg-green-50 rounded-lg">
-                  <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-4 flex-shrink-0">
-                    <i className="fas fa-project-diagram text-green-600"></i>
+                <div className="skill-item flex items-start p-4 bg-gray-800 border border-gray-400/30 rounded-lg">
+                  <div className="w-12 h-12 rounded-full bg-gray-500/20 border border-gray-400/40 flex items-center justify-center mr-4 flex-shrink-0">
+                    <i className="fas fa-project-diagram text-gray-400"></i>
                   </div>
                   <div>
-                    <h4 className="font-bold text-green-700">Workflow Engine</h4>
-                    <p className="text-gray-700">노드 기반 워크플로우<br/>시스템 개발</p>
+                    <h4 className="font-bold text-white">Workflow Engine</h4>
+                    <p className="text-gray-300">노드 기반 워크플로우<br/>시스템 개발</p>
                   </div>
                 </div>
-                <div className="skill-item flex items-start p-4 bg-orange-50 rounded-lg">
-                  <div className="w-12 h-12 rounded-full bg-orange-100 flex items-center justify-center mr-4 flex-shrink-0">
-                    <i className="fas fa-cogs text-orange-600"></i>
+                <div className="skill-item flex items-start p-4 bg-gray-800 border border-gray-400/30 rounded-lg">
+                  <div className="w-12 h-12 rounded-full bg-gray-500/20 border border-gray-400/40 flex items-center justify-center mr-4 flex-shrink-0">
+                    <i className="fas fa-cogs text-gray-400"></i>
                   </div>
                   <div>
-                    <h4 className="font-bold text-orange-700">센서 배치 최적화</h4>
-                    <p className="text-gray-700">Chama를 활용한 가스 감지기<br/> 배치 최적화 시스템</p>
+                    <h4 className="font-bold text-white">센서 배치 최적화</h4>
+                    <p className="text-gray-300">Chama를 활용한 가스 감지기<br/> 배치 최적화 시스템</p>
                   </div>
                 </div>
-                <div className="skill-item flex items-start p-4 bg-purple-50 rounded-lg">
-                  <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mr-4 flex-shrink-0">
-                    <i className="fas fa-users text-purple-600"></i>
+                <div className="skill-item flex items-start p-4 bg-gray-800 border border-gray-400/30 rounded-lg">
+                  <div className="w-12 h-12 rounded-full bg-gray-500/20 border border-gray-400/40 flex items-center justify-center mr-4 flex-shrink-0">
+                    <i className="fas fa-users text-gray-400"></i>
                   </div>
                   <div>
-                    <h4 className="font-bold text-purple-700">UX/UI</h4>
-                    <p className="text-gray-700">직관적인 사용자 인터페이스<br/>및 경험 설계</p>
+                    <h4 className="font-bold text-white">UX/UI</h4>
+                    <p className="text-gray-300">직관적인 사용자 인터페이스<br/>및 경험 설계</p>
                   </div>
                 </div>
               </div>
               <div className="mt-6">
-                <h3 className="text-2xl font-bold text-blue-700 mb-3">프로젝트 기여</h3>
-                <p className="text-gray-700">
+                <h3 className="text-2xl font-bold text-white mb-3">프로젝트 기여</h3>
+                <p className="text-gray-300">
                 DAS3D 프로젝트에서 3D 시각화 기술과
                 센서 배치 최적화 알고리즘을 중심으로<br/>
                 개발을 진행하였으며, 전체 시스템의
@@ -86,39 +86,38 @@ const About = () => {
               
               {/* Technical Skills Section */}
               <div className="mt-8">
-                <h3 className="text-2xl font-bold text-blue-700 mb-4">개발자 보유 기술</h3>
+                <h3 className="text-2xl font-bold text-white mb-4">개발자 보유 기술</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {/* Frontend */}
-                  <div className="p-4 bg-blue-50 rounded-lg">
-                    <h4 className="text-lg font-semibold text-gray-800 mb-3">프론트엔드</h4>
+                  <div className="p-4 bg-gray-800 border border-gray-400/30 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white mb-3">프론트엔드</h4>
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">TypeScript</span>
-                      <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">React</span>
-                      <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Next.js</span>
-                      <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Tailwind CSS</span>
+                      <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-sm border border-gray-400/30">TypeScript</span>
+                      <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-sm border border-gray-400/30">React</span>
+                      <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-sm border border-gray-400/30">Tailwind CSS</span>
                     </div>
                   </div>
                   
                   {/* Backend */}
-                  <div className="p-4 bg-green-50 rounded-lg">
-                    <h4 className="text-lg font-semibold text-gray-800 mb-3">백엔드</h4>
+                  <div className="p-4 bg-gray-800 border border-gray-400/30 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white mb-3">백엔드</h4>
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">NestJS</span>
-                      <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">MySQL</span>
-                      <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">MongoDB</span>
-                      <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">FastAPI</span>
+                      <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-sm border border-gray-400/30">NestJS</span>
+                      <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-sm border border-gray-400/30">MySQL</span>
+                      <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-sm border border-gray-400/30">MongoDB</span>
+                      <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-sm border border-gray-400/30">FastAPI</span>
                     </div>
                   </div>
                   
                   {/* Tools & Others */}
-                  <div className="p-4 bg-purple-50 rounded-lg">
-                    <h4 className="text-lg font-semibold text-gray-800 mb-3">도구 및 기타</h4>
+                  <div className="p-4 bg-gray-800 border border-gray-400/30 rounded-lg">
+                    <h4 className="text-lg font-semibold text-white mb-3">도구 및 기타</h4>
                     <div className="flex flex-wrap gap-2">
-                      <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Git</span>
-                      <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Docker</span>
-                      <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">AWS</span>
-                      <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">PyQt</span>
-                      <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">VTK</span>
+                      <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-sm border border-gray-400/30">Git</span>
+                      <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-sm border border-gray-400/30">Docker</span>
+                      <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-sm border border-gray-400/30">AWS</span>
+                      <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-sm border border-gray-400/30">PySide(Qt)</span>
+                      <span className="px-3 py-1 bg-gray-500/20 text-gray-400 rounded-full text-sm border border-gray-400/30">VTK</span>
                     </div>
                   </div>
                 </div>

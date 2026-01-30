@@ -7,6 +7,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0f0f14;
 }
 
 /* 데스크탑 스타일 (768px 이상) */
@@ -204,6 +205,41 @@ body {
   background: linear-gradient(135deg, #2d1b4e 0%, #1a0b2e 50%, #0a0a0a 100%);
 }
 
+/* Hero 전용: 그리드 + 글로우 조합 배경 */
+.hero-bg {
+  background-color: #0a0a0f;
+  background-image:
+    linear-gradient(rgba(34, 197, 94, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 197, 94, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+  position: relative;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 70% 50%, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
+              radial-gradient(ellipse 60% 40% at 20% 80%, rgba(34, 197, 94, 0.05) 0%, transparent 45%);
+  pointer-events: none;
+}
+
+/* Hero: 시뮬레이션 진행을 나타내는 스캔 라인 (의도 명확) */
+.hero-scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(34, 197, 94, 0.5), transparent);
+  animation: hero-scan 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes hero-scan {
+  0%, 100% { top: 20%; opacity: 0.6; }
+  50% { top: 80%; opacity: 1; }
+}
+
 .grid-pattern {
   background-size: 30px 30px;
 }
@@ -293,7 +329,7 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: #3b82f6;
+  background-color: rgb(34, 197, 94);
   z-index: 2;
 }
 
@@ -343,9 +379,9 @@ body {
   top: 50%;
   transform: translateY(-50%);
   z-index: 50;
-  background: rgba(45, 27, 78, 0.9);
-  color: white;
-  border: none;
+  background: rgba(34, 197, 94, 0.2);
+  color: rgb(34, 197, 94);
+  border: 1px solid rgba(34, 197, 94, 0.4);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -376,9 +412,9 @@ body {
 }
 
 .navigation-button:hover {
-  background: rgba(45, 27, 78, 1);
+  background: rgba(34, 197, 94, 0.3);
   transform: translateY(-50%) scale(1.1);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
 }
 
 .navigation-button:disabled {
@@ -417,8 +453,8 @@ body {
 }
 
 .indicator-dot.active {
-  background: #3b82f6;
+  background: rgb(34, 197, 94);
   border-color: white;
   transform: scale(1.3);
-  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
 } 

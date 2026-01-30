@@ -41,17 +41,17 @@ function App() {
   return (
     <div className="App">
       {/* 헤더 */}
-      <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm shadow-sm z-50">
+      <header className="fixed top-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 z-50">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
-            <div className="text-xl font-bold text-gray-800">
+            <div className="text-xl font-bold text-white">
               Jung Seunghoon's Portfolio
             </div>
             <nav className="hidden md:flex space-x-8">
               <button 
                 onClick={() => scrollToSection('hero')}
                 className={`text-sm font-medium transition-colors ${
-                  activeSection === 'hero' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
+                  activeSection === 'hero' ? 'text-green-400' : 'text-gray-400 hover:text-green-400'
                 }`}
               >
                 Home
@@ -59,7 +59,7 @@ function App() {
               <button 
                 onClick={() => scrollToSection('demo')}
                 className={`text-sm font-medium transition-colors ${
-                  activeSection === 'demo' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
+                  activeSection === 'demo' ? 'text-green-400' : 'text-gray-400 hover:text-green-400'
                 }`}
               >
                 Demo
@@ -67,7 +67,7 @@ function App() {
               <button 
                 onClick={() => scrollToSection('about')}
                 className={`text-sm font-medium transition-colors ${
-                  activeSection === 'about' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
+                  activeSection === 'about' ? 'text-green-400' : 'text-gray-400 hover:text-green-400'
                 }`}
               >
                 About
@@ -75,7 +75,7 @@ function App() {
               <button 
                 onClick={() => scrollToSection('overview')}
                 className={`text-sm font-medium transition-colors ${
-                  activeSection === 'overview' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
+                  activeSection === 'overview' ? 'text-green-400' : 'text-gray-400 hover:text-green-400'
                 }`}
               >
                 Overview
@@ -83,7 +83,7 @@ function App() {
               <button 
                 onClick={() => scrollToSection('architecture')}
                 className={`text-sm font-medium transition-colors ${
-                  activeSection === 'architecture' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
+                  activeSection === 'architecture' ? 'text-green-400' : 'text-gray-400 hover:text-green-400'
                 }`}
               >
                 Architecture
@@ -91,7 +91,7 @@ function App() {
               <button 
                 onClick={() => scrollToSection('features')}
                 className={`text-sm font-medium transition-colors ${
-                  activeSection === 'features' ? 'text-blue-600' : 'text-gray-600 hover:text-blue-600'
+                  activeSection === 'features' ? 'text-green-400' : 'text-gray-400 hover:text-green-400'
                 }`}
               >
                 Features
@@ -127,9 +127,9 @@ function App() {
       </main>
 
       {/* 푸터 */}
-      <footer className="bg-gray-900 text-white py-8">
+      <footer className="bg-gray-950 border-t border-green-400/20 text-white py-8">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400/80">
             © 2025 Jung Seunghoon. All rights reserved.
           </p>
         </div>
