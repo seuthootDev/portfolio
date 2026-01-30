@@ -6,6 +6,7 @@ import Architecture from './components/Architecture.jsx';
 import Features from './components/Features.jsx';
 import Demo from './components/Demo.jsx';
 import Conclusion from './components/Conclusion.jsx';
+import ScrollReveal from './components/ScrollReveal.jsx';
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -101,28 +102,42 @@ function App() {
         </div>
       </header>
 
-      {/* 메인 콘텐츠 */}
+      {/* 메인 콘텐츠 - 스크롤 시 슬라이드인 */}
       <main className="pt-16">
         <section id="hero">
-          <Hero />
+          <ScrollReveal>
+            <Hero />
+          </ScrollReveal>
         </section>
         <section id="demo">
-          <Demo />
+          <ScrollReveal delay={0}>
+            <Demo />
+          </ScrollReveal>
         </section>
         <section id="about">
-          <About />
+          <ScrollReveal delay={0}>
+            <About />
+          </ScrollReveal>
         </section>
         <section id="overview">
-          <ProjectOverview />
+          <ScrollReveal delay={0}>
+            <ProjectOverview />
+          </ScrollReveal>
         </section>
         <section id="architecture">
-          <Architecture />
+          <ScrollReveal delay={0}>
+            <Architecture />
+          </ScrollReveal>
         </section>
         <section id="features">
-          <Features />
+          <ScrollReveal delay={0}>
+            <Features />
+          </ScrollReveal>
         </section>
         <section id="conclusion">
-          <Conclusion />
+          <ScrollReveal delay={0}>
+            <Conclusion />
+          </ScrollReveal>
         </section>
       </main>
 

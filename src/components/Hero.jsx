@@ -6,14 +6,6 @@ const Hero = () => {
       {/* 시뮬레이션 진행을 나타내는 스캔 라인 — "분석/시뮬레이션 실행 중" 의미 */}
       <div className="hero-scan-line z-0" aria-hidden="true" />
 
-      {/* 우측: 3D 시뮬레이션 아이콘 + 라벨 (의도 명확) */}
-      <div className="absolute right-4 sm:right-8 md:right-16 lg:right-24 top-1/2 -translate-y-1/2 flex flex-col items-center gap-2 text-center">
-        <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-xl bg-green-500/20 border border-green-400/40 flex items-center justify-center">
-          <i className="fas fa-cube text-green-400 text-xl sm:text-2xl" aria-hidden="true" />
-        </div>
-        <span className="text-xs sm:text-sm text-green-400/90 font-medium">3D 시뮬레이션</span>
-      </div>
-
       {/* Main content */}
       <div className="container mx-auto px-8 relative z-10">
         <div className="flex flex-col justify-center min-h-[50vh]">
