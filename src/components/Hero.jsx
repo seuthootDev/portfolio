@@ -18,14 +18,25 @@ const Hero = () => {
           <h2 className="text-lg sm:text-xl md:text-2xl text-green-400 font-light mb-6 md:mb-12">
             QT 기반 WorkFlow 방식의 QUI
           </h2>
-          <div className="flex items-center mt-1 mb-15">
-            <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-green-500/20 border border-green-400/40 flex items-center justify-center">
-              <i className="fas fa-user text-green-400 text-base md:text-lg"></i>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-1 mb-15">
+            <div className="flex items-center">
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-green-500/20 border border-green-400/40 flex items-center justify-center">
+                <i className="fas fa-user text-green-400 text-base md:text-lg"></i>
+              </div>
+              <div className="ml-4">
+                <p className="text-white text-base sm:text-lg">정승훈</p>
+                <p className="text-gray-400 text-xs sm:text-sm">소프트웨어 개발자</p>
+              </div>
             </div>
-            <div className="ml-4">
-              <p className="text-white text-base sm:text-lg">정승훈</p>
-              <p className="text-gray-400 text-xs sm:text-sm">소프트웨어 개발자</p>
-            </div>
+            <a
+              href="https://resume-jungseunghoon.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-green-500/20 border-2 border-green-400/60 text-green-400 font-semibold hover:bg-green-500/30 hover:border-green-400 transition-all duration-200 shadow-lg shadow-green-500/10"
+            >
+              <i className="fas fa-file-alt"></i>
+              <span>Resume</span>
+            </a>
           </div>
         </div>
       </div>

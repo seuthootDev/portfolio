@@ -47,7 +47,17 @@ const Conclusion = () => {
               <h3 className="text-xl font-bold text-white mb-1">함께할 기회를 찾고 있습니다.</h3>
               <p className="text-green-400/90 text-sm">백엔드 · 풀스택 분야 제안을 환영합니다.</p>
             </div>
-            <div className="flex justify-center items-center gap-3">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <a
+                href="https://resume-jungseunghoon.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-green-500/20 border-2 border-green-400/60 text-green-400 font-semibold hover:bg-green-500/30 hover:border-green-400 transition-all duration-200"
+              >
+                <i className="fas fa-file-alt"></i>
+                <span>Resume</span>
+              </a>
+              <div className="flex items-center gap-3">
               <a
                 href="mailto:seuthootDev@gmail.com"
                 className="inline-flex items-center justify-center w-12 h-12 rounded-md bg-gray-500/20 border border-gray-400/40 text-gray-400 hover:bg-gray-500/30 transition-colors"
@@ -64,6 +74,7 @@ const Conclusion = () => {
               >
                 <i className="fab fa-github"></i>
               </a>
+            </div>
             </div>
           </div>
         </div>
